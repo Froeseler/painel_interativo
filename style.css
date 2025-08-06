@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 1rem;
+    background-color: #0d0d2b;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+    transition: all 0.5s ease;
+    padding: 2vh;
+}
+
+body.light-mode {
+    background-color: #f2f2f2;
+    color: #1a1a1a;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 2vh;   
+}
+
+.painel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2vh;
+}
+
+.universo {
+    width: 47%;
+    height: 40vh;
+    background: linear-gradient(135deg, #1e1e40, #292967);
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, background 0.5s ease;
+    animation: pulsa 4s infinite;
+}
+
+.universo:hover {
+    transform: scale(1.05);
+}
+
+.u1 {
+    background: linear-gradient(135deg, #1b2735, #090a0f);
+}
+
+.u2 {
+    background: linear-gradient(135deg, #004e92, #000428);
+}
+
+.u3 {
+    background: linear-gradient(135deg, #7f00ff, #e100ff);
+}
+
+.u4 {
+    background: linear-gradient(135deg, #1f4037, #99f2c8);
+}
+
+
+.titulo {
+    font-size: 1.5em;
+    margin-bottom: 1vh;
+}
+
+.icone {
+    font-size: 3rem;
+}
+
+button {
+    margin: 3vh auto;
+    display: block;
+    padding: 1em 2em;
+    font-size: 1em;
+    border: none;
+    border-radius: 0.5em;
+    background-color: #ff5f57;
+    color:white;
+    cursor: pointer;
+    transition: backgraund-color 0.3 ease;
+}
+
+button:hover {
+    background-color: #ff2d00;
+}
+
+@keyframes pulsa{
+    0%, 100%{transform: scale(1);}
+    50%{transform: scale(1.05);}
+}
+
+@media(max-width:768px) {
+    .universo{
+        width: 100%;
+        height: 30vh;
+    }
+}
