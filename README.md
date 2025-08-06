@@ -6,7 +6,7 @@ Painel envolvendo tecnologias utilizando html5, css e JS.
 
 ## Stack utilizada
 
-**Front-end:** Html5, css
+**Front-end:** Html5, css e JS.
 
 
 
